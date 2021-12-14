@@ -3,7 +3,7 @@ date: '2020-10-16'
 title: 'Senior Software Engineer'
 company: 'Gartner'
 location: 'Gurgaon, India'
-range: 'November 2021 - Present'
+range: 'December 2021 - Present'
 url: 'https://www.gartner.com/'
 ---
 
