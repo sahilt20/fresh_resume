@@ -3,7 +3,7 @@ date: '2020-10-16'
 title: 'Senior Analyst Programmer'
 company: 'Fidelity International'
 location: 'Gurgaon, India'
-range: 'October 2020 - Present'
+range: 'October 2020 - November 2021'
 url: 'https://www.fidelityinternational.com/'
 ---
 

@@ -60,15 +60,15 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Sahil Tanwar.</h2>;
-  const three = <h3 className="big-heading">I am a Data engineer.</h3>;
+  const three = <h3 className="big-heading">I am a Python Developer.</h3>;
   const four = (
     <p>
       I'm a software engineer who specializes in building (and occasionally
       designing) Data piplines. Currently, I'm an engineer at{' '}
-      <a href="https://www.fidelityinternational.com/" target="_blank" rel="noreferrer">
-        fidelity International
+      <a href="https://www.gartner.com/" target="_blank" rel="noreferrer">
+        Gartner
       </a>{' '}
-      focused on building data intensive piplines.
+      focused on building cloud based data intensive piplines.
     </p>
   );
   const five = (
