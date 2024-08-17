@@ -7,7 +7,7 @@ range: 'November 2021 - October 2022'
 url: 'https://www.gartner.com/'
 ---
 
-- Working on developing Data Pipeline using AWS serverless architecture using resources like Lambda, SNS, SQS and AWS Glue, Airflow and provisioning with Terraform.
-- Involved in Python OOD code for quality, logging, Security Reviews, monitoring, and debugging code optimization.
-- Extensive code reviewing using Bitbucket pull requests, improved code quality, and conducted meetings among peers.
-- Collaborated with Product Management and User Experience experts regarding product definition, schedule, scope and project-related decisions.
+- Serverless Data Pipeline Development: Engineered data pipelines leveraging AWS serverless architecture, including Lambda, SNS, SQS, AWS Glue, and Airflow, with infrastructure provisioning managed by Terraform.
+- Python OOD Practices: Implemented Python object-oriented design principles for enhancing code quality, logging, security reviews, monitoring, and optimizing code performance.
+- Code Review Expertise: Conducted extensive code reviews using Bitbucket pull requests, improving overall code quality and leading peer review meetings to foster collaboration and knowledge sharing.
+- Cross-Functional Collaboration: Collaborated closely with Product Management and User Experience teams to define product requirements, establish project schedules, manage scope, and make informed project-related decisions.
