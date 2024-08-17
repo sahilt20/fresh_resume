@@ -64,9 +64,9 @@ const Hero = () => {
   const four = (
     <p>
       I'm a software engineer who specializes in building (and occasionally
-      designing) Data piplines. Currently, I'm an engineer at{' '}
-      <a href="https://www.gartner.com/" target="_blank" rel="noreferrer">
-        Gartner
+      designing) Data piplines and DevOps pipelines. Currently, I'm an engineer at{' '}
+      <a href="https://www.deloitte.com/uk/en/about.html" target="_blank" rel="noreferrer">
+        Deloitte UK
       </a>{' '}
       focused on building cloud based data intensive piplines.
     </p>
