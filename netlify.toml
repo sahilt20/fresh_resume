@@ -3,7 +3,7 @@
   publish = "public"
 
 [build.environment]
-  NODE_VERSION = "14.17.0"
+  NODE_VERSION = "16"
   NPM_FLAGS = "--legacy-peer-deps"
 
 [[plugins]]
