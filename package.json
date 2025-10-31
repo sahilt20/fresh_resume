@@ -14,7 +14,9 @@
   "browserslist": "> 0.25%, not dead",
   "overrides": {
     "graphql": "^15.8.0",
-    "postcss": "^8.4.31"
+    "postcss": "^8.4.31",
+    "cheerio": "1.0.0-rc.10",
+    "parse5-parser-stream": "6.0.1"
   },
   "scripts": {
     "build": "gatsby build",
