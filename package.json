@@ -12,11 +12,13 @@
   ],
   "license": "MIT",
   "browserslist": "> 0.25%, not dead",
+  "resolutions": {
+    "graphql": "^15.8.0",
+    "postcss": "^8.4.31"
+  },
   "overrides": {
     "graphql": "^15.8.0",
-    "postcss": "^8.4.31",
-    "cheerio": "1.0.0-rc.10",
-    "parse5-parser-stream": "6.0.1"
+    "postcss": "^8.4.31"
   },
   "scripts": {
     "build": "gatsby build",
@@ -51,7 +53,6 @@
     "gatsby-plugin-sitemap": "^4.0.0",
     "gatsby-plugin-styled-components": "^4.4.0",
     "gatsby-remark-external-links": "0.0.4",
-    "gatsby-remark-images": "^5.1.0",
     "gatsby-remark-prismjs": "^5.1.0",
     "gatsby-source-filesystem": "^3.4.0",
     "gatsby-transformer-remark": "^4.1.0",

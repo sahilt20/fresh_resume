@@ -72,15 +72,6 @@ module.exports = {
             },
           },
           {
-            // https://www.gatsbyjs.org/packages/gatsby-remark-images
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 700,
-              linkImagesToOriginal: true,
-              quality: 90,
-            },
-          },
-          {
             // https://www.gatsbyjs.org/packages/gatsby-remark-code-titles/
             resolve: 'gatsby-remark-code-titles',
           }, // IMPORTANT: this must be ahead of other plugins that use code blocks
