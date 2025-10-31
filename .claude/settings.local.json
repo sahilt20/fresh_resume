@@ -20,7 +20,14 @@
       "Bash(rd /s /q node_modules)",
       "Bash(dir:*)",
       "Bash(git checkout:*)",
-      "Bash(npm start)"
+      "Bash(npm start)",
+      "Bash(tasklist:*)",
+      "Bash(cmd //c \"taskkill //PID 12272 //F & taskkill //PID 5460 //F\")",
+      "Bash(cmd /c \"taskkill /PID 12272 /F & taskkill /PID 5460 /F\")",
+      "Bash(cmd /c \"taskkill /F /PID 12272 & taskkill /F /PID 5460\")",
+      "Bash(powershell -Command:*)",
+      "Bash(npm update:*)",
+      "Bash(cmd /c \"taskkill /F /PID 22792\")"
     ],
     "deny": [],
     "ask": []
