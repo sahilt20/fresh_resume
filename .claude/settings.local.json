@@ -27,7 +27,10 @@
       "Bash(cmd /c \"taskkill /F /PID 12272 & taskkill /F /PID 5460\")",
       "Bash(powershell -Command:*)",
       "Bash(npm update:*)",
-      "Bash(cmd /c \"taskkill /F /PID 22792\")"
+      "Bash(cmd /c \"taskkill /F /PID 22792\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)"
     ],
     "deny": [],
     "ask": []
