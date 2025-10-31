@@ -10,14 +10,18 @@ const button = css`
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
-  transition: var(--transition);
+  transition: var(--transition-smooth);
   padding: 1.25rem 1.75rem;
+  position: relative;
+  overflow: hidden;
 
   &:hover,
   &:focus,
   &:active {
     background-color: var(--green-tint);
     outline: none;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
   }
   &:after {
     display: none !important;
@@ -57,7 +61,7 @@ const mixins = {
     text-decoration: none;
     text-decoration-skip-ink: auto;
     position: relative;
-    transition: var(--transition);
+    transition: var(--transition-smooth);
     color: var(--green);
     &:hover,
     &:focus,
@@ -66,21 +70,22 @@ const mixins = {
       outline: 0;
       &:after {
         width: 100%;
+        opacity: 1;
       }
       & > * {
         color: var(--green) !important;
-        transition: var(--transition);
+        transition: var(--transition-smooth);
       }
     }
     &:after {
       content: '';
       display: block;
       width: 0;
-      height: 1px;
+      height: 2px;
       position: relative;
       bottom: 0.37em;
       background-color: var(--green);
-      transition: var(--transition);
+      transition: var(--transition-smooth);
       opacity: 0.5;
     }
   `,
@@ -98,12 +103,14 @@ const mixins = {
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
-    transition: var(--transition);
+    transition: var(--transition-smooth);
     &:hover,
     &:focus,
     &:active {
       background-color: var(--green-tint);
       outline: none;
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-sm);
     }
     &:after {
       display: none !important;
@@ -114,19 +121,23 @@ const mixins = {
     color: var(--green);
     background-color: transparent;
     border: 1px solid var(--green);
-    border-radius: var(--border-radius);
-    padding: 1.25rem 1.75rem;
-    font-size: var(--fz-sm);
+    border-radius: var(--border-radius-lg);
+    padding: clamp(1rem, 2vw, 1.25rem) clamp(1.5rem, 3vw, 1.75rem);
+    font-size: clamp(13px, 2.5vw, 14px);
     font-family: var(--font-mono);
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
-    transition: var(--transition);
+    transition: var(--transition-smooth);
+    font-weight: 500;
     &:hover,
     &:focus,
     &:active {
       background-color: var(--green-tint);
       outline: none;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--green);
     }
     &:after {
       display: none !important;
@@ -134,12 +145,12 @@ const mixins = {
   `,
 
   boxShadow: css`
-    box-shadow: 0 10px 30px -15px var(--navy-shadow);
-    transition: var(--transition);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-smooth);
 
     &:hover,
     &:focus {
-      box-shadow: 0 20px 30px -15px var(--navy-shadow);
+      box-shadow: var(--shadow-lg);
     }
   `,
 

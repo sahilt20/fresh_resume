@@ -32,18 +32,25 @@ const GlobalStyle = createGlobalStyle`
   /* Scrollbar Styles */
   html {
     scrollbar-width: thin;
-    scrollbar-color: var(--dark-slate) var(--navy);
+    scrollbar-color: var(--green) var(--navy);
+    scroll-behavior: smooth;
   }
   body::-webkit-scrollbar {
     width: 12px;
   }
   body::-webkit-scrollbar-track {
     background: var(--navy);
+    border-radius: 10px;
   }
   body::-webkit-scrollbar-thumb {
-    background-color: var(--dark-slate);
-    border: 3px solid var(--navy);
+    background: linear-gradient(180deg, var(--green) 0%, rgba(100, 255, 218, 0.7) 100%);
+    border: 2px solid var(--navy);
     border-radius: 10px;
+    transition: var(--transition-smooth);
+  }
+  body::-webkit-scrollbar-thumb:hover {
+    background: var(--green);
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
   }
 
   body {
@@ -54,13 +61,18 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background-color: var(--navy);
+    background-image:
+      radial-gradient(at 0% 0%, rgba(100, 255, 218, 0.03) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(100, 255, 218, 0.02) 0px, transparent 50%);
     color: var(--slate);
     font-family: var(--font-sans);
-    font-size: var(--fz-xl);
-    line-height: 1.3;
+    font-size: clamp(16px, 2.5vw, 20px);
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
 
     @media (max-width: 480px) {
-      font-size: var(--fz-lg);
+      font-size: clamp(15px, 3vw, 18px);
+      line-height: 1.7;
     }
 
     &.hidden {
@@ -95,44 +107,44 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     max-width: 1600px;
     min-height: 100vh;
-    padding: 200px 150px;
+    padding: clamp(100px, 15vh, 200px) clamp(20px, 8vw, 150px);
 
     @media (max-width: 1080px) {
-      padding: 200px 100px;
+      padding: clamp(100px, 12vh, 180px) clamp(20px, 7vw, 100px);
     }
     @media (max-width: 768px) {
-      padding: 150px 50px;
+      padding: clamp(100px, 10vh, 150px) clamp(16px, 5vw, 50px);
     }
     @media (max-width: 480px) {
-      padding: 125px 25px;
+      padding: clamp(100px, 8vh, 125px) clamp(16px, 4vw, 25px);
     }
 
     &.fillHeight {
-      padding: 0 150px;
+      padding: 0 clamp(20px, 8vw, 150px);
 
       @media (max-width: 1080px) {
-        padding: 0 100px;
+        padding: 0 clamp(20px, 7vw, 100px);
       }
       @media (max-width: 768px) {
-        padding: 0 50px;
+        padding: 0 clamp(16px, 5vw, 50px);
       }
       @media (max-width: 480px) {
-        padding: 0 25px;
+        padding: 0 clamp(16px, 4vw, 25px);
       }
     }
   }
 
   section {
     margin: 0 auto;
-    padding: 100px 0;
+    padding: clamp(60px, 12vh, 100px) 0;
     max-width: 1000px;
 
     @media (max-width: 768px) {
-      padding: 80px 0;
+      padding: clamp(50px, 10vh, 80px) 0;
     }
 
     @media (max-width: 480px) {
-      padding: 60px 0;
+      padding: clamp(40px, 8vh, 60px) 0;
     }
   }
 

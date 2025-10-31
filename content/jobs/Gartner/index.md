@@ -7,7 +7,8 @@ range: 'November 2021 - October 2022'
 url: 'https://www.gartner.com/'
 ---
 
-- Serverless Data Pipeline Development: Engineered data pipelines leveraging AWS serverless architecture, including Lambda, SNS, SQS, AWS Glue, and Airflow, with infrastructure provisioning managed by Terraform.
-- Python OOD Practices: Implemented Python object-oriented design principles for enhancing code quality, logging, security reviews, monitoring, and optimizing code performance.
-- Code Review Expertise: Conducted extensive code reviews using Bitbucket pull requests, improving overall code quality and leading peer review meetings to foster collaboration and knowledge sharing.
-- Cross-Functional Collaboration: Collaborated closely with Product Management and User Experience teams to define product requirements, establish project schedules, manage scope, and make informed project-related decisions.
+- Engineered AWS infrastructure with Terraform because Infrastructure-as-Code beats Infrastructure-as-Screenshots every time. Automated environment provisioning so developers stop asking "can I have a server?" and start deploying. Turns out "serverless" still needs someone who knows what servers do
+- Built serverless data pipelines using AWS Lambda, SNS, SQS, AWS Glue, and Airflow that process data while I sleep. Orchestrated workflows that actually flow instead of becoming data traffic jams in random S3 buckets. Event-driven architecture: because polling is so 2010
+- Implemented Python OOP patterns and design principles to write code that doesn't make future-me cry. Six months from now, "clever code" shouldn't require a PhD to understand—maintainability over cleverness, always
+- Conducted code reviews on Bitbucket with the diplomatic precision of a UN negotiator. Established coding standards while diplomatically avoiding "what were you thinking?" Everyone's code improved, nobody quit
+- Collaborated with Product and UX teams to translate "make it faster" into actual technical solutions. Mastered the art of saying "technically possible, but..." in ways that don't crush product dreams while staying realistic

@@ -12,6 +12,7 @@ const StyledJobsSection = styled.section`
 
   .inner {
     display: flex;
+    transition: var(--transition-smooth);
 
     @media (max-width: 600px) {
       display: block;
@@ -19,7 +20,11 @@ const StyledJobsSection = styled.section`
 
     // Prevent container from jumping
     @media (min-width: 700px) {
-      min-height: 340px;
+      min-height: 380px;
+    }
+
+    @media (min-width: 600px) and (max-width: 699px) {
+      min-height: 350px;
     }
   }
 `;
@@ -73,29 +78,45 @@ const StyledTabButton = styled.button`
   width: 100%;
   height: var(--tab-height);
   padding: 0 20px 2px;
-  border-left: 2px solid var(--lightest-navy);
-  background-color: transparent;
+  border-left: 2px solid ${({ isActive }) => (isActive ? 'var(--green)' : 'var(--lightest-navy)')};
+  background-color: ${({ isActive }) => (isActive ? 'rgba(100, 255, 218, 0.05)' : 'transparent')};
   color: ${({ isActive }) => (isActive ? 'var(--green)' : 'var(--slate)')};
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
+  font-weight: ${({ isActive }) => (isActive ? '500' : '400')};
   text-align: left;
   white-space: nowrap;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: var(--border-radius-sm);
 
   @media (max-width: 768px) {
     padding: 0 15px 2px;
   }
+
   @media (max-width: 600px) {
     ${({ theme }) => theme.mixins.flexCenter};
     min-width: 120px;
     padding: 0 15px;
     border-left: 0;
-    border-bottom: 2px solid var(--lightest-navy);
+    border-bottom: 2px solid ${({ isActive }) => (isActive ? 'var(--green)' : 'var(--lightest-navy)')};
     text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    min-width: 100px;
+    padding: 0 12px;
+    font-size: 12px;
   }
 
   &:hover,
   &:focus {
-    background-color: var(--light-navy);
+    background-color: rgba(100, 255, 218, 0.08);
+    color: var(--green);
+    transform: ${({ isActive }) => (isActive ? 'none' : 'translateX(2px)')};
+
+    @media (max-width: 600px) {
+      transform: ${({ isActive }) => (isActive ? 'none' : 'translateY(-2px)')};
+    }
   }
 `;
 
@@ -130,6 +151,7 @@ const StyledTabPanels = styled.div`
   position: relative;
   width: 100%;
   margin-left: 20px;
+  transition: var(--transition-smooth);
 
   @media (max-width: 600px) {
     margin-left: 0;
@@ -140,9 +162,30 @@ const StyledTabPanel = styled.div`
   width: 100%;
   height: auto;
   padding: 10px 5px;
+  transition: var(--transition-smooth);
+
+  @media (max-width: 600px) {
+    padding: 5px 0;
+  }
 
   ul {
     ${({ theme }) => theme.mixins.fancyList};
+
+    li {
+      transition: var(--transition-smooth);
+      margin-bottom: 12px;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 13px;
+        line-height: 1.5;
+      }
+    }
   }
 
   h3 {
@@ -150,9 +193,19 @@ const StyledTabPanel = styled.div`
     font-size: var(--fz-xxl);
     font-weight: 500;
     line-height: 1.3;
+    transition: var(--transition-smooth);
+
+    @media (max-width: 600px) {
+      font-size: clamp(18px, 4vw, 20px);
+    }
 
     .company {
       color: var(--green);
+      transition: var(--transition-smooth);
+
+      &:hover {
+        text-shadow: 0 0 8px rgba(100, 255, 218, 0.3);
+      }
     }
   }
 
@@ -161,6 +214,12 @@ const StyledTabPanel = styled.div`
     color: var(--light-slate);
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
+    transition: var(--transition-smooth);
+
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
   }
 `;
 

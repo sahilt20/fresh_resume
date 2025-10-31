@@ -29,15 +29,19 @@ const StyledSocialList = styled.ul`
 
     a {
       padding: 10px;
+      cursor: pointer;
+      transition: var(--transition-smooth);
 
       &:hover,
       &:focus {
         transform: translateY(-3px);
+        color: var(--green);
       }
 
       svg {
         width: 20px;
         height: 20px;
+        transition: var(--transition-smooth);
       }
     }
   }

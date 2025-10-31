@@ -1,19 +1,17 @@
 ---
 date: '2022-11-01'
-title: 'Devops Lead'
+title: 'DevOps Lead'
 company: 'Deloitte UK'
-location: 'Milton Kynes, United Kingdom'
+location: 'Milton Keynes, UK'
 range: 'November 2022 - Present'
 url: 'https://www2.deloitte.com/uk/en/explore/home.html'
 ---
 
-- Expert in CI/CD Process Design and Implementation: Proficient in utilizing Azure DevOps tools, automation scripts, and security policies to create and optimize CI/CD processes.
-- YAML Pipeline Management: Constructed and managed YAML-based pipelines, optimizing reusable job and step templates, resulting in a 25% increase in pipeline efficiency.
-- Standardization of Resource Naming: Led a technical initiative to standardize resource naming conventions, enhancing tracking and management of cloud resources.
-- Team Productivity Enhancement: Improved team productivity by sharing Azure best practices, achieving a 40% reduction in deployment issues.
-- PowerShell Scripting for Automation: Provided expertise in PowerShell scripting for automation tasks, saving over 400 man-hours annually.
-- Open Source Contribution: Developed an open-source collection of YAML pipeline templates to facilitate reusable DevOps practices (github.com/YAMLPipelineTemplates).
-- Pipeline Builder Development: Created a pipeline builder that automates the pipeline creation process by linking parameters to Azure Boards and ServiceNow.
-- Tableau Site Migration Pipelines: Developed pipelines for migrating Tableau sites from lower to higher environments.
-- MuleSoft DevOps Pipeline Strategy: Extensive experience in building MuleSoft DevOps pipelines and strategies.
-- SAP HANA DevOps Pipeline: Designed and implemented DevOps pipelines for SAP HANA, integrating with BODS and BOBJ, along with Git strategy.
+- Architected enterprise CI/CD infrastructure on Azure DevOps that deploys code while humans do human things (like debating tabs vs spaces). Implemented Infrastructure-as-Code because clicking buttons doesn't scale. Boosted deployment efficiency by 25%, which marketing would call "revolutionary" but I call "using Git properly"
+- Built YAML-based pipeline framework with reusable templates, eliminating the copy-paste disaster that plagued our repos. Saved 400+ hours annually that developers now spend writing better code instead of babysitting deployments
+- Standardized cloud resource naming conventions across the organization—"prod-server-v2-FINAL-actually-final" is now illegal. Achieved 40% reduction in deployment issues by enforcing Azure best practices and occasionally wielding the veto hammer
+- Developed automated pipeline builder integrating Azure Boards and ServiceNow, because manually approving 50 deployments daily builds character (the wrong kind). Change management now happens automatically while I focus on actual engineering
+- Designed DevOps pipelines for SAP HANA environments, teaching legacy systems modern CI/CD tricks. Turns out you can teach old databases new deployment strategies—it just takes more Git branching models than expected
+- Built comprehensive DevOps pipelines for MuleSoft integration platform where APIs connect, transform, and occasionally misbehave. Implemented automated testing because "it worked in dev" doesn't count as a deployment strategy
+- Created Tableau site migration pipelines with zero-downtime deployments—executive dashboards going dark during earnings calls is a career-ending move. Data visualizations now migrate seamlessly, pie charts intact
+- Developed PowerShell automation framework that provisions Azure infrastructure faster than meetings can be scheduled. My scripts work harder than I do, exactly as the automation gods intended

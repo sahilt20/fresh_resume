@@ -27,10 +27,13 @@ const StyledLinkWrapper = styled.div`
     line-height: var(--fz-lg);
     letter-spacing: 0.1em;
     writing-mode: vertical-rl;
+    cursor: pointer;
+    transition: var(--transition-smooth);
 
     &:hover,
     &:focus {
       transform: translateY(-3px);
+      color: var(--green);
     }
   }
 `;

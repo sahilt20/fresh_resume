@@ -6,7 +6,7 @@ location: 'Gurgaon, IND'
 range: 'Jun 2015 - Sep 2019'
 ---
 
-- Workflow Design: Developed intricate workflows utilizing assignment tasks, event wait, and event raise tasks, employing Informatica Scheduler for efficient job scheduling.
-- Advanced SQL Development: Proficient in crafting complex SQL queries, including unions and multiple table joins, with extensive experience in creating and managing database views.
-- Data Visualization: Created compelling visualizations and dashboards in Tableau to effectively communicate insights and narratives derived from data analysis.
-- Troubleshooting and Root Cause Analysis: Independently executed complex troubleshooting, conducted root cause analysis, and developed effective solutions to address data-related issues.
+- Automated workflows with Informatica Scheduler using assignment tasks, event waits, and event raises—basically teaching workflows to manage themselves. Job scheduling that runs like clockwork, minus the manual clock-winding
+- Developed complex SQL queries with unions and multi-table joins that actually finish running before the heat death of the universe. Created database views that made querying data less painful for everyone downstream
+- Built Tableau dashboards that turned raw data into stories business stakeholders could understand without a statistics degree. Data visualization: the art of making numbers interesting to people who hate numbers
+- Mastered troubleshooting and root cause analysis by independently hunting down data issues before they escalated into executive escalations. Solved problems that made other people say "that's impossible" until I showed them the fix

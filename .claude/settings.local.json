@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run clean:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm dedupe:*)",
+      "Bash(npm cache clean:*)",
+      "Bash(yarn install)",
+      "Bash(yarn build:*)",
+      "Bash(del:*)",
+      "Bash(npm run develop:*)",
+      "Bash(timeout /t 10)",
+      "Bash(mkdir:*)",
+      "Bash(set NODE_OPTIONS=--openssl-legacy-provider)",
+      "Bash(timeout:*)",
+      "Bash(taskkill:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(rd /s /q node_modules)",
+      "Bash(dir:*)",
+      "Bash(git checkout:*)",
+      "Bash(npm start)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
